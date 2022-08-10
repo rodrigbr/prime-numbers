@@ -7,14 +7,20 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="FluentValidation" Version="11.1.0" />
-    <PackageReference Include="MediatR" Version="10.0.1" />
+    <Compile Remove="Contracts\**" />
+    <Compile Remove="Statics\**" />
+    <Compile Remove="ValueObjects\**" />
+    <EmbeddedResource Remove="Contracts\**" />
+    <EmbeddedResource Remove="Statics\**" />
+    <EmbeddedResource Remove="ValueObjects\**" />
+    <None Remove="Contracts\**" />
+    <None Remove="Statics\**" />
+    <None Remove="ValueObjects\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Contracts\" />
-    <Folder Include="Statics\" />
-    <Folder Include="ValueObjects\" />
+    <PackageReference Include="FluentValidation" Version="11.1.0" />
+    <PackageReference Include="MediatR" Version="10.0.1" />
   </ItemGroup>
 
 </Project>
