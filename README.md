@@ -1,4 +1,3 @@
-# prime-numbers
 #Backend
 
 - .NET 6
