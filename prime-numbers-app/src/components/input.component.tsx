@@ -17,13 +17,14 @@ export function InputPrimeNumber() {
     return (
         <div>
             <input onChange={e => fetchPrimeNumber(e.target.value)} type="text" id="primeNumber" name="primeNumber" />
+            <br />
             <div>
-                {primeNumbers && primeNumbers.object.primeDivisorsNumbers.map(m => <span>{m}, </span>)}
+                Primos: {primeNumbers && primeNumbers.object.primeNumbers.map(m => <span>{m}, </span>)}
             </div>
+            <br />
             <div>
-                {primeNumbers && primeNumbers.object.primeNumbers.map(m => <span>{m}, </span>)}
+                Divisores: {primeNumbers && primeNumbers.object.primeDivisorsNumbers.map(m => <span>{m}, </span>)}
             </div>
-
         </div>
     )
 }
