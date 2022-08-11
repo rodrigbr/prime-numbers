@@ -19,6 +19,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prime.Numbers.Domain", "Pri
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prime.Numbers.Infra", "Prime.Numbers.Infra\Prime.Numbers.Infra.csproj", "{22AEF17E-5BB4-4695-9382-55B1078D5531}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-Tests", "4-Tests", "{FD097E18-D55C-4D02-8A54-78D7FFFEDF5B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prime.Numbers.Application.Tests", "Prime.Numbers.Application.Tests\Prime.Numbers.Application.Tests.csproj", "{A470178A-6C34-4A24-9381-526ABFEEA749}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +45,10 @@ Global
 		{22AEF17E-5BB4-4695-9382-55B1078D5531}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22AEF17E-5BB4-4695-9382-55B1078D5531}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22AEF17E-5BB4-4695-9382-55B1078D5531}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A470178A-6C34-4A24-9381-526ABFEEA749}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A470178A-6C34-4A24-9381-526ABFEEA749}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A470178A-6C34-4A24-9381-526ABFEEA749}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A470178A-6C34-4A24-9381-526ABFEEA749}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +58,7 @@ Global
 		{ABE53289-FB73-455E-B804-61A4534C8A87} = {AE6062B0-F87E-4A66-91FD-2938C48F4860}
 		{310CBFAC-4342-4269-9E1B-DC185AC48C3D} = {AE448E58-71DA-46CC-A3E2-E16576C52FE4}
 		{22AEF17E-5BB4-4695-9382-55B1078D5531} = {51F6C115-766D-444E-BBBE-F4C3D11F44EF}
+		{A470178A-6C34-4A24-9381-526ABFEEA749} = {FD097E18-D55C-4D02-8A54-78D7FFFEDF5B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2F9E0517-68F6-4B48-871B-D04DD23366EE}

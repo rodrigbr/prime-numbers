@@ -1,4 +1,5 @@
-﻿using FluentValidation.Results;
+﻿using AutoMapper.QueryableExtensions.Impl;
+using FluentValidation.Results;
 using MediatR;
 using Prime.Numbers.Application.Commands;
 using Prime.Numbers.Application.Extensions;
@@ -22,7 +23,7 @@ namespace Prime.Numbers.Application.CommandHandlers
             if (validationErrors.Any())
                 return validationErrors.ToOperationResult<PrimeNumbersResult>();
 
-            List<int> divisors = new List<int>();
+            List<int> primes = new List<int>();
             List<int> primeDivisors = new List<int>();
 
             for (var i = 1; i <= Math.Sqrt(request.Number); i++)
@@ -30,21 +31,23 @@ namespace Prime.Numbers.Application.CommandHandlers
                 if (request.Number % i == 0)
                 {
                     primeDivisors.Add(i);
-                    divisors.Add(i);
-                    if (i != (request.Number / i))
+                    primes.Add(i);
+
+                    var divisorsCalc = (request.Number / i);
+                    if (i != divisorsCalc)
                     {
-                        divisors.Add((request.Number / i));
+                        primes.Add(divisorsCalc);
                     }
                 }
             }
 
-            divisors.Sort();
+            primes.Sort();
             primeDivisors.Sort();
 
             PrimeNumbersResult primeNumbers = new PrimeNumbersResult()
             {
                 PrimeDivisorsNumbers = primeDivisors,
-                PrimeNumbers = divisors
+                PrimeNumbers = primes
             };
 
             return OperationResult<PrimeNumbersResult>.CreateSuccess(primeNumbers);
