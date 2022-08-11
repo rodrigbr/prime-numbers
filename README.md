@@ -10,7 +10,7 @@
 
 # Frontend
 
-- vite: 3.0.0
+- vite: 3.0.0 (https://vitejs.dev/)
 - react 18.2.0
 - react-dom 18.2.0
 - react-router-dom: 6.3.0
