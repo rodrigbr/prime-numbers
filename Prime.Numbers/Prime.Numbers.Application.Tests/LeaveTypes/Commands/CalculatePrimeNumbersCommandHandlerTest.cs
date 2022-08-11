@@ -8,6 +8,7 @@ using Prime.Numbers.Application.Commands;
 using Prime.Numbers.Application.Helpers;
 using Prime.Numbers.Domain.Entites;
 using Shouldly;
+using Xunit;
 
 namespace Prime.Numbers.Application.Tests.LeaveTypes.Queries
 {
